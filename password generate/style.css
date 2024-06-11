@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+body{
+    background-color:#00203a;
+}
+.container{
+    margin: 12%;
+    width:90%;
+    max-width: 700px;
+}
+.container h1{
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.container h1 span{
+    border-bottom: 3px solid  #0e7f5c;
+    color:#0e7f5c;
+}
+.header{
+    width: 90%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #333;
+    padding: 24px 20px;
+    border-radius: 5px;
+}
+.header img{
+    width:30px;
+    cursor: pointer;
+}
+.header input  {
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+}
+.generate{
+    margin-top: 30px;
+}
+.generate button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 42px;
+    background-color:  #007d4c;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.generate button img{
+    width: 28px;
+    margin-right: 10px;
+}
+.section {
+    margin:15%;
+    width: 100%;
+
+}
+.section h1{
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.section h1 img{
+    width:50px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    padding: 9px 28px;
+    border-radius: 25px;
+    background-color: #912ff7;
+    color: aliceblue;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+button img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.input-box{
+    padding: 20px 10px;
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    min-height: 150px;
+    position: relative;
+    margin-top: 30px;
+}
+.input-box img{
+    position: absolute;
+    bottom: 10%;
+    right: 2%;
+    width: 30px;
+    cursor: pointer;
+}

@@ -1,0 +1,250 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .tasks{
+        @apply flex items-center justify-between border-2 mb-5 border-white text-white font-semibold p-4 italic;
+
+    }
+    .list-input{
+        @apply w-[50%] bg-transparent outline-none;
+    }
+}
+
+.form-control {
+    position: relative;
+    margin: 42px 0 40px;
+    width: 780px;
+  }
+  
+  .form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .form-control input:focus,
+  .form-control input:valid {
+    outline: 0;
+    border-bottom-color: lightblue;
+  }
+  
+  .form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  .form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    color: #fff;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .form-control input:focus+label span,
+  .form-control input:valid+label span {
+    color: lightblue;
+    transform: translateY(-30px);
+  }
+
+  /* input button */
+
+
+  .btn2 {
+    position: relative;
+    display: inline-block;
+    padding: 14px 30px;
+    border: 2px solid #fefefe;
+    /* text-transform: uppercase; */
+    color: #fefefe;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    transition: 0.3s;
+  }
+  
+  .btn2::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px); 
+    height: calc(100% - -2px);
+    background-color: #212121;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+  }
+  
+  .btn2::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 50px);
+    background-color: #212121;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+  }
+  
+  .btn2:hover::before {
+    transform: translateY(-25px);
+    height: 0;
+  }
+  
+  .btn2:hover::after {
+    transform: scaleX(0);
+    transition-delay: 0.15s;
+  }
+  
+  .btn2:hover {
+    border: 2px solid #fefefe;
+  }
+  
+  .btn2 span {
+    position: relative;
+    z-index: 3;
+  }
+  
+  button {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+  }
+
+  /* button */
+  .Btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100px;
+    height: 45px;
+    border: none;
+    padding: 0px 20px;
+    background-color: rgb(168, 38, 255);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px rgb(140, 32, 212);
+    transition-duration: .3s;
+  }
+  
+  .svg {
+    width: 13px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    fill: white;
+    transition-duration: .3s;
+  }
+  
+ .Btn:hover {
+    color: transparent;
+  }
+  
+  .Btn:hover svg {
+    right: 43%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition-duration: .3s;
+  }
+  
+  .Btn:active {
+    transform: translate(3px , 3px);
+    transition-duration: .3s;
+    box-shadow: 2px 2px 0px rgb(140, 32, 212);
+  }
+
+  .btn-1 {
+    width: 110px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background: #e62222;
+   }
+   
+   button, button span {
+    transition: 200ms;
+   }
+   
+   .btn-1 .text {
+    transform: translateX(15px);
+    color: white;
+    font-weight: bold;
+   }
+   
+   .btn-1 .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(70px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+   button svg {
+    width: 15px;
+    fill: #eee;
+   }
+   
+   .btn-1:hover {
+    background: #ff3636;
+   }
+   
+   button:hover .text {
+    color: transparent;
+    color: white;
+   }
+   
+   button:hover .icon {
+    width: 110px;
+    border-left: none;
+    transform: translateX(0);
+   }
+   
+   button:focus {
+    outline: none;
+   }
+   
+   button:active .icon svg {
+    transform: scale(0.8);
+   }
+
+   /* #task-div{
+    position: relative;
+   }
+.tasks{
+  animation: 0.5s drop;
+  position: absolute;
+}
+   @keyframes drop {
+    0% {
+      /* transform: translateY(-100%); */
+      /* animation-timing-function: cubic-bezier(0.8, 0, 1, 1); */
+      top: -100px;
+    }
+    100% {
+      /* transform: translateY(-50%); */
+      /* animation-timing-function: cubic-bezier(0, 0, 0.2, 1); */
+      top: 50%;
+    }
+  } */
